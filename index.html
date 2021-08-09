@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html data-teheme="light">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Calculator by shu6h4m</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<!-- Code by shu6h4m if you are using this code, please do follow me on github -->
+<body>
+<br><br>
+<div id="shu6h4m" align = "center">
+ 
+    <br>
+    <div id="calculator">
+        <header>
+            <label id="previous"></label>
+            <div id="current">
+                <div id="current-value">0</div>
+            </div>
+        </header>
+
+        <div id="keys">
+
+            <button id="clear">C</button>
+            <button id="all_clear">AC</button>
+
+
+            <button class="numbers">1</button>
+            <button class="numbers">2</button>
+            <button class="numbers">3</button>
+            <button class="operators">/</button>
+
+            <button class="numbers">4</button>
+            <button class="numbers">5</button>
+            <button class="numbers">6</button>
+            <button class="operators">*</button>
+
+            <button class="numbers">7</button>
+            <button class="numbers">8</button>
+            <button class="numbers">9</button>
+            <button class="operators">+</button>
+
+            <button class="numbers">0</button>
+            <button class="numbers">.</button>
+            <button class="numbers">=</button>
+            <button class="operators">-</button>
+        </div>
+    </div>
+    </br>
+<div>
+    <input type="button" id="theme-switcher" value="Change Theme"></input>
+   <a href= "https://www.instagram.com/shu6h4m"><input type="button" id="insta" value="Let's Connect"></input></a>
+</div>
+<br>
+</div>
+<br>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.documentElement.setAttribute("data-theme", "light");
+
+            var themeSwitcher = document.getElementById("theme-switcher");
+
+            themeSwitcher.onclick = function () {
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+        });
+    </script>
+</body>
+</html>

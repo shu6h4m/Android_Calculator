@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<widget
+    android-versionCode = '1'
+    id = 'com.shu6h4m.calculator'
+    version = '1.0.0'
+    xmlns = 'https://www.w3.org/ns/widgets'>
+
+<name>Calculator</name>
+<description>Simple Calculator by Shubham</description>
+<author>shu6h4m</author>
+
+</widget>

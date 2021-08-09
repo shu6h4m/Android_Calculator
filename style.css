@@ -1,0 +1,144 @@
+
+/* code by shu6h4m please do follow me on github if you are using this code */
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700");
+:root {
+  --header-bg: #00CED1;
+  --header-color: black;
+  --main-bg: white;
+  --operators-bg: #B0E0E6;
+  --operators-bg-hover: rgba(255, 189, 77, 0.7);
+  --all-btn-bg: white;
+  --all-btn-hover: #cdcdcd;
+  --body-bg: #f0ffff;
+  --box-shadow: 10px 10px 48px #97a1a1, -10px -10px 48px #ffffff;
+  --label-text: #111;
+}
+
+/* styles for dark theme  */
+
+
+[data-theme="dark"] {
+  --header-bg: rgb(248, 177, 25);
+  --header-color: white;
+  --main-bg: rgb(192, 187, 187);
+  --operators-bg: rgb(114, 112, 112);
+  --operators-bg-hover: rgb(65 59 59 / 24%);
+  --all-btn-bg: rgb(192, 187, 187);
+  --all-btn-hover: lightgrey;
+  --body-bg: #333;
+  --box-shadow: 10px 10px 48px #232323, -10px -10px 48px #23222085;
+  --label-text: #fff;
+}
+
+
+
+body {
+  align-items: center;
+  margin: auto;
+  font-size: 18px;
+  font-family: "Roboto Mono";
+  background: var(--body-bg);
+}
+
+
+
+
+#calculator {
+  align-items: center;
+  margin: auto;
+  width: 336px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+header {
+  padding: 20px;
+  background: var(--header-bg);
+  color: var(--header-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: right;
+  height: 80px;
+}
+
+header #detail {
+  font-size: 1em;
+}
+
+header #current {
+  font-size: 2em;
+}
+
+#keys {
+  height: 100%;
+  background: var(--main-bg);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: auto;
+}
+
+#keys .operators {
+  background-color: var(--operators-bg);
+  margin-top: 2px;
+}
+
+#keys .operators:hover {
+  background-color: var(--operators-bg-hover);
+}
+
+#keys .numbers {
+  margin-top: 2px;
+}
+
+#keys #all_clear {
+  width: 50%;
+  margin-top: 2px;
+}
+
+#keys #clear {
+  width: 50%;
+  margin-top: 2px;
+}
+
+#keys button {
+  font-size: 1.2em;
+  font-family: "Roboto Mono";
+  float: left;
+  width: 25%;
+  border: 0;
+  padding: 1em;
+  cursor: pointer;
+  background: var(--all-btn-bg);
+}
+
+#keys button:hover {
+  background: var(--all-btn-hover);
+  transition: 0.4s all;
+}
+
+#keys button:focus {
+  outline: none;
+}
+
+#keys button:active {
+  box-shadow: 0 0 10px #cdcdcd;
+}
+
+/* styles for change theme button  */
+
+
+input[type="button"] {
+  border: 0;
+  margin: auto;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--header-color);
+  border-radius: 10px;
+  background-color: var(--header-bg);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
